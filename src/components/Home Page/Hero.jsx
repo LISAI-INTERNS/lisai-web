@@ -1,4 +1,4 @@
-import heroBg from '../assets/Hero-BG-LISAI-Guard.png'
+import heroBg from '../../assets/Hero-BG-LISAI-Guard.png'
 
 export default function Hero() {
   return (

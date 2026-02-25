@@ -1,7 +1,7 @@
-import guardIcon from '../assets/guard_1.png'
-import researchIcon from '../assets/research_1.png'
-import consultationIcon from '../assets/consultation_1.png'
-import vipIcon from '../assets/personal-data_1.png'
+import guardIcon from '../../assets/guard_1.png'
+import researchIcon from '../../assets/research_1.png'
+import consultationIcon from '../../assets/consultation_1.png'
+import vipIcon from '../../assets/personal-data_1.png'
 
 const services = [
   {

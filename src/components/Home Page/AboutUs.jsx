@@ -1,4 +1,4 @@
-import guardPhoto from '../assets/Guard-Element-Home.png'
+import guardPhoto from '../../assets/Guard-Element-Home.png'
 
 const stats = [
   { value: '5,000', label: 'Successful Projects' },

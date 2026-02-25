@@ -1,4 +1,4 @@
-import logo from '../assets/lisai-logo.png'
+import logo from '../../assets/lisai-logo.png'
 
 const navLinks = ['Home', 'About Us', 'Services', 'Jobs / Training', 'Contact Us', 'Security Gazette']
 
