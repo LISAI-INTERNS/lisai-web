@@ -6,6 +6,7 @@ import ServiceHighlights from './components/Home Page/ServiceHighlights'
 import AboutUs from './components/Home Page/AboutUs'
 import ContactUs from './components/Home Page/ContactUs'
 import AboutUsPage from './components/AboutUs/AboutUsPage'
+import ServicesPage from './components/ServicesPage/ServicesPage'
 
 function HomePage() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
