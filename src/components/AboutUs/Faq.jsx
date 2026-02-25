@@ -19,65 +19,59 @@ const faqs = [
   },
 ]
 
-function FAQItem({ faq, isOpen, onClick }) {
-  return (
-    <div className="border-b border-gray-200">
-      <button
-        onClick={onClick}
-        className="w-full flex justify-between items-center py-4 text-left"
-      >
-        <span className={`text-sm font-semibold ${isOpen ? 'text-gray-900' : 'text-gray-700'}`}>
-          {faq.question}
-        </span>
-        <span className={`text-xl font-light transition-transform duration-200 ${isOpen ? 'text-teal-500' : 'text-gray-400'}`}>
-          {isOpen ? '▲' : '▼'}
-        </span>
-      </button>
-      {isOpen && (
-        <div className="pb-4 text-sm text-gray-500 leading-relaxed">
-          {faq.answer}
-        </div>
-      )}
-    </div>
-  )
-}
-
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section className="bg-white py-16 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+    <section className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #b2ede6 0%, #7dd8cf 50%, #3DD5C6 100%)' }}>
+      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-16">
         {/* Left */}
-        <div className="flex-1 max-w-xs">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
+        <div className="lg:w-72 flex-shrink-0">
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-600 text-base">
             Here are some of LISAI's frequently asked questions.
           </p>
         </div>
 
         {/* Right: Accordion */}
-        <div className="flex-1">
-          {/* First item - open with teal bg */}
-          <div className="bg-teal-500 rounded-xl p-5 mb-2">
-            <div className="flex justify-between items-center">
-              <span className="text-white font-semibold text-sm">{faqs[0].question}</span>
-              <span className="text-white text-xl">▲</span>
-            </div>
-            <p className="text-white/90 text-sm mt-3">{faqs[0].answer}</p>
-          </div>
+        <div className="flex-1 space-y-3">
+          {faqs.map((faq, i) => {
+            const isOpen = openIndex === i
+            return (
+              <div
+                key={faq.question}
+                className="rounded-xl overflow-hidden border border-white/40"
+                style={{ transition: 'box-shadow 0.2s' }}
+              >
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  className={`w-full flex justify-between items-center px-6 py-5 text-left transition-all duration-300 ${
+                    isOpen ? 'bg-teal-500 text-white' : 'bg-white/60 hover:bg-white/80 text-gray-800'
+                  }`}
+                >
+                  <span className="text-base font-semibold">{faq.question}</span>
+                  <span
+                    className={`text-xl transition-transform duration-300 ${isOpen ? 'rotate-180 text-white' : 'text-gray-400'}`}
+                  >
+                    ▼
+                  </span>
+                </button>
 
-          {/* Rest of items */}
-          {faqs.slice(1).map((faq, i) => (
-            <FAQItem
-              key={faq.question}
-              faq={faq}
-              isOpen={openIndex === i + 1}
-              onClick={() => setOpenIndex(openIndex === i + 1 ? null : i + 1)}
-            />
-          ))}
+                {/* Animated answer */}
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="bg-teal-500 px-6 pb-5 text-sm text-white/90 leading-relaxed">
+                    {faq.answer}
+                  </div>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>
