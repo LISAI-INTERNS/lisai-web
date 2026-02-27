@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import logo from '../../assets/lisai-logo.png'
 
 const navLinks = [
@@ -10,6 +11,8 @@ const navLinks = [
 ]
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <nav className="absolute top-0 w-full z-50 bg-transparent">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -22,7 +25,7 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Nav Links */}
+        {/* Desktop Nav Links */}
         <ul className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.label}>
@@ -35,7 +38,43 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* Hamburger Button */}
+        <button
+          className="lg:hidden text-white focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div style={{ backgroundColor: 'rgba(10, 32, 29, 0.97)' }} className="lg:hidden px-6 pb-6">
+          <ul className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <Link
+                  to={link.path}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-white text-sm font-medium hover:text-teal-300 transition-colors duration-200 block py-2 border-b border-white/10"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   )
 }
