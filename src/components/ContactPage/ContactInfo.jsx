@@ -93,64 +93,82 @@ export default function ContactInfo() {
           </div>
 
           {/* Right - Form */}
-          <div style={{ border: '1px solid #e5e7eb', borderRadius: '12px', padding: '32px' }}>
-            <p style={{ color: '#6b7280', fontSize: '13px', marginBottom: '4px' }}>Send Us a Message</p>
-            <h3 style={{ fontSize: '22px', fontWeight: '700', color: '#111827', marginBottom: '8px' }}>
-              We'll Get Back to You Shortly
-            </h3>
-            <p style={{ color: '#9ca3af', fontSize: '13px', marginBottom: '24px' }}>
-              Fill out the form below and one of our team members will respond within 1 business day.
-            </p>
+              {/* Right - Form */}
+<div style={{ border: '1px solid #e5e7eb', borderRadius: '12px', padding: '32px' }}>
+  <p style={{ color: '#6b7280', fontSize: '13px', marginBottom: '4px' }}>Send Us a Message</p>
+  <h3 style={{ fontSize: '22px', fontWeight: '700', color: '#111827', marginBottom: '8px' }}>
+    We'll Get Back to You Shortly
+  </h3>
+  <p style={{ color: '#9ca3af', fontSize: '13px', marginBottom: '24px' }}>
+    Fill out the form below and one of our team members will respond within 1 business day.
+  </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>First Name</label>
-                  <input placeholder="Juan" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
-                </div>
-                <div>
-                  <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Last Name</label>
-                  <input placeholder="Dela Cruz" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
-                </div>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Email Address</label>
-                  <input placeholder="juan@email.com" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
-                </div>
-                <div>
-                  <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Mobile Number</label>
-                  <input placeholder="09XX-XXX-XXXX" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
-                </div>
-              </div>
-
+  {/* 1. Added form tag with your Formspree URL */}
+          <form 
+            action="https://formspree.io/f/mykdorbj" 
+            method="POST" 
+            style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
+          >
+                {/* Add this line here */}
+                <input  type="hidden"  name="_subject"  value="𝐋𝐢𝐛𝐞𝐫𝐭𝐲 𝐈𝐧𝐯𝐞𝐬𝐭𝐢𝐠𝐚𝐭𝐢𝐨𝐧𝐬 & 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 𝐀𝐠𝐞𝐧𝐜𝐲 𝐈𝐧𝐜.  : {{topic}}" />
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
               <div>
-                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Topic / Service</label>
-                <select style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', color: '#6b7280', boxSizing: 'border-box' }}>
-                  {topics.map((t) => <option key={t}>{t}</option>)}
-                </select>
+                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>First Name</label>
+                {/* 2. Added name="first_name" */}
+                <input name="first Name" required placeholder="Juan" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
               </div>
-
               <div>
-                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Company / Organization <span style={{ color: '#9ca3af' }}>(Optional)</span></label>
-                <input placeholder="Your company name" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Last Name</label>
+                {/* 2. Added name="last_name" */}
+                <input name="last Name" required placeholder="Dela Cruz" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
               </div>
-
-              <div>
-                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Message</label>
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your security needs, location, number of guards needed, or any other details..."
-                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
-                />
-              </div>
-
-              <button style={{ backgroundColor: '#0f766e', color: 'white', fontWeight: '700', fontSize: '14px', padding: '14px', borderRadius: '6px', border: 'none', cursor: 'pointer', letterSpacing: '0.05em' }}>
-                SEND MESSAGE
-              </button>
             </div>
-          </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+              <div>
+                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Email Address</label>
+                {/* 2. Added name="email" and type="email" */}
+                <input name="Email" type="email" required placeholder="juan@email.com" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+              </div>
+              <div>
+                <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Mobile Number</label>
+                {/* 2. Added name="phone" */}
+                <input name="Phone" placeholder="09XX-XXX-XXXX" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+              </div>
+            </div>
+
+            <div>
+              <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Topic / Service</label>
+              {/* 2. Added name="topic" */}
+              <select name="topic" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', color: '#6b7280', boxSizing: 'border-box' }}>
+                {topics.map((t) => <option key={t} value={t}>{t}</option>)}
+              </select>
+            </div>
+
+            <div>
+              <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Company / Organization <span style={{ color: '#9ca3af' }}>(Optional)</span></label>
+              {/* 2. Added name="company" */}
+              <input name="Company" placeholder="Your company name" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+            </div>
+
+            <div>
+              <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Message</label>
+              {/* 2. Added name="message" */}
+              <textarea
+                name="Message"
+                required
+                rows={4}
+                placeholder="Tell us about your security needs..."
+                style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
+              />
+            </div>
+
+            {/* 3. Changed button to type="submit" */}
+            <button type="submit" style={{ backgroundColor: '#0f766e', color: 'white', fontWeight: '700', fontSize: '14px', padding: '14px', borderRadius: '6px', border: 'none', cursor: 'pointer', letterSpacing: '0.05em' }}>
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
         </div>
       </div>
     </section>

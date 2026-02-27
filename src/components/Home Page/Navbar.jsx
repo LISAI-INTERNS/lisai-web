@@ -11,8 +11,8 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <nav className="absolute top-0 w-full z-50 bg-transparent">
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <nav className="absolute top-1 w-full z-50 bg-transparent">
+      <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="LISAI Logo" className="h-10 w-auto" />
