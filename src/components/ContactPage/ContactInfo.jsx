@@ -115,12 +115,12 @@ export default function ContactInfo() {
               <div>
                 <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>First Name</label>
                 {/* 2. Added name="first_name" */}
-                <input name="first Name" required placeholder="Juan" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                <input name="First Name" required placeholder="Juan" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
               </div>
               <div>
                 <label style={{ fontSize: '12px', color: '#374151', fontWeight: '500', display: 'block', marginBottom: '6px' }}>Last Name</label>
                 {/* 2. Added name="last_name" */}
-                <input name="last Name" required placeholder="Dela Cruz" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                <input name="Last Name" required placeholder="Dela Cruz" style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '6px', padding: '10px 12px', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
               </div>
             </div>
 
