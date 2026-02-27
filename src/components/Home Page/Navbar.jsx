@@ -7,7 +7,7 @@ const navLinks = [
   { label: 'Services', path: '/services' },
   { label: 'Jobs / Training', path: '/jobs' },    
   { label: 'Contact Us', path: '/contact' },
-  { label: 'Security Gazette', path: '/gazette' },
+  
 ]
 
 export default function Navbar() {
