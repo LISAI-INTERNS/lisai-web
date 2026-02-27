@@ -1,0 +1,23 @@
+export default function JoinFamily() {
+  return (
+    <section className="bg-white py-20 px-6 text-center">
+      <div className="max-w-2xl mx-auto">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-3">
+          Join the LISAI Family{' '}
+          <span className="text-teal-500">Today</span>
+        </h2>
+        <p className="text-gray-500 text-sm mb-8">
+          Be part of a team that has protected lives and assets across Metro Manila for over four decades.
+        </p>
+        <div className="flex justify-center gap-4">
+          <button style={{ backgroundColor: '#0f766e', color: 'white', fontSize: '14px', fontWeight: '600', padding: '14px 32px', borderRadius: '6px', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+            Learn More on Facebook
+          </button>
+          <button style={{ backgroundColor: 'transparent', color: '#374151', fontSize: '14px', fontWeight: '600', padding: '14px 32px', borderRadius: '6px', border: '1px solid #d1d5db', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+            Apply for a Position
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
