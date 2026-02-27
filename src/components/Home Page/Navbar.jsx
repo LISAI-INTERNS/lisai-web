@@ -5,19 +5,17 @@ const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   { label: 'Services', path: '/services' },
-  { label: 'Jobs / Training', path: '/jobs' },    
+  { label: 'Jobs / Training', path: '/jobs' },
   { label: 'Contact Us', path: '/contact' },
-  
 ]
 
 export default function Navbar() {
   return (
-    
     <nav className="absolute top-0 w-full z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="LISAI Logo" className="h-14 w-auto" />
+          <img src={logo} alt="LISAI Logo" className="h-10 w-auto" />
           <div className="leading-tight">
             <p className="text-white font-bold text-sm">Liberty Investigation</p>
             <p className="text-white font-bold text-sm">& Security Agency Inc.</p>
@@ -41,6 +39,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
-
-
