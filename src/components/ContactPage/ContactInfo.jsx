@@ -7,23 +7,11 @@ export default function ContactInfo() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
-      .sendForm(
-        "service_l5tzziw",
-        "template_9b0ekwt",
-        formRef.current,
-        "PjuCjthlPhvNW1EMA"
-      )
+      .sendForm("service_l5tzziw", "template_9b0ekwt", formRef.current, "PjuCjthlPhvNW1EMA")
       .then(
-        () => {
-          setStatus("success");
-          formRef.current.reset();
-        },
-        () => {
-          setStatus("error");
-
-        }
+        () => { setStatus("success"); formRef.current.reset(); },
+        () => { setStatus("error"); }
       );
   };
 
@@ -67,7 +55,6 @@ export default function ContactInfo() {
   ]
 
   const topics = [
-    'Select a Topic',
     'Security Guard Services',
     'Personal Protection',
     'Event Security',
@@ -76,13 +63,13 @@ export default function ContactInfo() {
   ]
 
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-white py-16 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Section Header */}
-        <div className="mb-12">
+        <div className="mb-10">
           <p className="text-sm text-gray-500 mb-2">Contact Information</p>
-          <h2 className="text-3xl font-bold text-teal-700 mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-teal-700 mb-3">
             Start with a Free Consultation
           </h2>
           <p className="text-gray-500 max-w-lg leading-relaxed text-sm">
@@ -91,100 +78,77 @@ export default function ContactInfo() {
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        {/* Grid — stacks on mobile, side by side on lg */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-          {/* LEFT SIDE */}
-          <div className="space-y-6">
-
-            {infoCards.map((card) => (
-              <div
-                key={card.title}
-                className="flex gap-4 border border-gray-200 rounded-xl p-5"
-              >
-                <div className="w-11 h-11 bg-teal-50 rounded-lg flex items-center justify-center shrink-0">
-                  {card.icon}
+          {/* LEFT: info cards + map */}
+          <div className="space-y-4">
+            {/* Info cards — 2 col on sm, 1 col on mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {infoCards.map((card) => (
+                <div key={card.title} className="flex gap-3 border border-gray-200 rounded-xl p-4">
+                  <div className="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center shrink-0">
+                    {card.icon}
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-semibold text-gray-900 text-sm mb-1">{card.title}</p>
+                    {card.lines.map((line, i) => (
+                      <p key={i} className="text-gray-500 text-xs leading-relaxed break-words">{line}</p>
+                    ))}
+                  </div>
                 </div>
-
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm mb-1">
-                    {card.title}
-                  </p>
-                  {card.lines.map((line, i) => (
-                    <p key={i} className="text-gray-500 text-sm leading-relaxed">
-                      {line}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
 
             {/* Map */}
-            <div className="rounded-xl overflow-hidden border border-gray-200">
+            <div className="rounded-xl overflow-hidden border border-gray-200 w-full">
               <iframe
                 title="LISAI Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.4!2d120.9833!3d14.6566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b40e2f123456%3A0xabcdef!2s440+Rizal+Ave+Ext%2C+East+Grace+Park%2C+Caloocan+City!5e0!3m2!1sen!2sph!4v1"
-                className="w-full h-56"
+                className="w-full h-52 sm:h-64 block"
                 loading="lazy"
               />
             </div>
           </div>
 
-
-          {/* RIGHT SIDE - FORM CARD */}
-          <div className="border border-gray-200 rounded-2xl p-8 shadow-sm bg-white">
-
+          {/* RIGHT: form */}
+          <div className="border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm bg-white">
             <p className="text-sm text-gray-500 mb-1">Send Us a Message</p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
               We'll Get Back to You Shortly
             </h3>
-
             <p className="text-gray-400 text-sm mb-6">
               Inquire here by filling up the details below.
             </p>
 
-            <form
-              ref={formRef}
-              onSubmit={sendEmail}
-              className="space-y-5"
-            >
-              {/* Full Name */}
+            <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Name
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                 <input
                   name="full_name"
                   required
                   placeholder="Juan Dela Cruz"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
                 />
               </div>
 
-              {/* Email */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
                 <input
                   name="email"
                   type="email"
                   required
                   placeholder="juan@email.com"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
                 />
               </div>
 
-              {/* Topic */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Topic / Service
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Topic / Service</label>
                 <select
                   name="topic"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
                 >
                   <option value="">Select a Service</option>
                   {topics.map((t) => (
@@ -193,61 +157,48 @@ export default function ContactInfo() {
                 </select>
               </div>
 
-              {/* Company */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Company / Organization
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Company / Organization</label>
                 <input
                   name="company"
                   required
                   placeholder="Your company name"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
                 />
               </div>
 
-              {/* Message */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Message
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                 <textarea
                   name="message"
                   required
                   rows={4}
                   placeholder="Tell us about your security needs..."
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 transition"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className={`w-full py-3 rounded-lg font-semibold text-sm tracking-wide transition
-                ${status === "sending"
-                    ? "bg-teal-500 cursor-not-allowed"
-                    : "bg-teal-700 hover:bg-teal-800"}
-                text-white`}
+                className={`w-full py-3 rounded-lg font-semibold text-sm tracking-wide transition ${
+                  status === "sending" ? "bg-teal-500 cursor-not-allowed" : "bg-teal-700 hover:bg-teal-800"
+                } text-white`}
               >
                 {status === "sending" ? "Sending..." : "SEND MESSAGE"}
               </button>
             </form>
 
-            {/* Success / Error */}
             {status === "success" && (
-              <div className="mt-6 p-4 rounded-lg bg-green-50 text-green-700 text-sm">
-                ✅ Your message has been successfully sent.
-                A representative from Liberty Investigation and Security Agency Inc. (LISAI)
-                will contact you.
+              <div className="mt-5 p-4 rounded-lg bg-green-50 text-green-700 text-sm">
+                ✅ Your message has been successfully sent. A representative from LISAI will contact you.
               </div>
             )}
-
             {status === "error" && (
-              <div className="mt-6 p-4 rounded-lg bg-red-50 text-red-700 text-sm">
+              <div className="mt-5 p-4 rounded-lg bg-red-50 text-red-700 text-sm">
                 ❌ Something went wrong. Please try again.
               </div>
             )}
-
           </div>
         </div>
       </div>
