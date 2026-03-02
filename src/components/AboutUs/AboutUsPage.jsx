@@ -1,7 +1,6 @@
 import AboutHero from './AboutHero'
 import TheStory from './Thestory'
 import OurJourney from './Ourjourney'
-import IndustriesServed from './IndustriesServed'
 import FAQ from './FAQ'
 
 export default function AboutUsPage() {
@@ -10,7 +9,6 @@ export default function AboutUsPage() {
       <AboutHero />
       <TheStory />
       <OurJourney />
-      <IndustriesServed />
       <FAQ />
     </div>
   )
