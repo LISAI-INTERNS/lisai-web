@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import logo from '../../assets/lisai-logo.png'
 
 const navLinks = [
@@ -13,12 +13,37 @@ const navLinks = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const [visible, setVisible] = useState(true)
+  const [atTop, setAtTop] = useState(true)
+  const lastScrollY = useRef(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY
+      setAtTop(currentY < 10)
+      setVisible(currentY < lastScrollY.current || currentY < 10)
+      lastScrollY.current = currentY
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Close menu when navigating
+  useEffect(() => { setMenuOpen(false) }, [location])
 
   const isActive = (path) =>
     path === '/' ? location.pathname === '/' : location.pathname.startsWith(path)
 
   return (
-    <nav className="absolute top-1 w-full z-50 bg-transparent">
+    <nav
+      className="fixed top-0 w-full z-50 transition-transform duration-300 lg:absolute lg:transform-none"
+      style={{
+        transform: visible ? 'translateY(0)' : 'translateY(-100%)',
+        backgroundColor: atTop && !menuOpen ? 'transparent' : 'rgba(10, 32, 29, 0.97)',
+        backdropFilter: atTop && !menuOpen ? 'none' : 'blur(8px)',
+      }}
+    >
       <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
@@ -36,9 +61,7 @@ export default function Navbar() {
               <Link
                 to={link.path}
                 className={`text-sm font-medium transition-colors duration-200 relative pb-1 ${
-                  isActive(link.path)
-                    ? 'text-[#3DD5C6]'
-                    : 'text-white hover:text-teal-300'
+                  isActive(link.path) ? 'text-[#3DD5C6]' : 'text-white hover:text-teal-300'
                 }`}
               >
                 {link.label}
@@ -53,7 +76,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Hamburger Button */}
+        {/* Hamburger */}
         <button
           className="lg:hidden text-white focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -81,9 +104,7 @@ export default function Navbar() {
                   to={link.path}
                   onClick={() => setMenuOpen(false)}
                   className={`text-sm font-medium transition-colors duration-200 block py-2 border-b border-white/10 ${
-                    isActive(link.path)
-                      ? 'text-[#3DD5C6]'
-                      : 'text-white hover:text-teal-300'
+                    isActive(link.path) ? 'text-[#3DD5C6]' : 'text-white hover:text-teal-300'
                   }`}
                 >
                   {link.label}
