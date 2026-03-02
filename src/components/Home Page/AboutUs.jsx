@@ -1,71 +1,98 @@
-import guardPhoto from '../../assets/Guard-Element-Home.png'
+import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
+import logo from '../../assets/lisai-logo.png'
 
-const stats = [
-  { value: '5,000', label: 'Successful Projects' },
-  { value: '5,000', label: 'Guards on Duty' },
-  { value: '5,000', label: 'Happy Customers' },
+const navLinks = [
+  { label: 'Home', path: '/' },
+  { label: 'About Us', path: '/about' },
+  { label: 'Services', path: '/services' },
+  { label: 'Jobs / Training', path: '/jobs' },
+  { label: 'Contact Us', path: '/contact' },
 ]
 
-export default function AboutUs() {
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+
+  const isActive = (path) =>
+    path === '/' ? location.pathname === '/' : location.pathname.startsWith(path)
+
   return (
-    <section className="bg-white py-16 sm:py-20 px-6 overflow-hidden">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <nav className="absolute top-1 w-full z-50 bg-transparent">
+      <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logo} alt="LISAI Logo" className="h-10 w-auto" />
+          <div className="leading-tight">
+            <p className="text-white font-bold text-sm">Liberty Investigation</p>
+            <p className="text-white font-bold text-sm">& Security Agency Inc.</p>
+          </div>
+        </Link>
 
-        {/* Left: Content */}
-        <div className="flex-1 w-full text-center lg:text-left">
-          <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#1a202c] mb-2">
-            About Us
-          </p>
-
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-[900] text-[#2d3748] leading-[1.1] mb-6 tracking-tight">
-            Built on <span className="text-[#009688]">Integrity,</span><br />
-            Bound by <span className="text-[#009688]">Trust.</span>
-          </h2>
-
-          <p className="text-[#4a5568] text-base mb-8 leading-relaxed opacity-90 max-w-md mx-auto lg:mx-0">
-            Over four decades of unmatched dedication to safeguarding your lives and assets.
-          </p>
-
-          {/* Stats */}
-          <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 mb-10 flex-wrap">
-            {stats.map((stat, i) => (
-              <div key={stat.label} className="flex gap-6 sm:gap-8 items-center">
-                <div className="flex flex-col items-center lg:items-start">
-                  <span className="text-[#009688] font-black text-2xl sm:text-3xl leading-none">
-                    {stat.value}
-                  </span>
-                  <span className="text-[#718096] text-[10px] font-bold uppercase tracking-wider mt-2 leading-tight w-20 text-center lg:text-left">
-                    {stat.label}
-                  </span>
-                </div>
-                {i < stats.length - 1 && (
-                  <div className="h-10 w-[1.5px] bg-[#009688] opacity-20" />
+        {/* Desktop Nav Links */}
+        <ul className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <li key={link.label}>
+              <Link
+                to={link.path}
+                className={`text-sm font-medium transition-colors duration-200 relative pb-1 ${
+                  isActive(link.path)
+                    ? 'text-[#3DD5C6]'
+                    : 'text-white hover:text-teal-300'
+                }`}
+              >
+                {link.label}
+                {isActive(link.path) && (
+                  <span
+                    className="absolute bottom-0 left-0 right-0 h-[2px] rounded-full"
+                    style={{ backgroundColor: '#3DD5C6' }}
+                  />
                 )}
-              </div>
-            ))}
-          </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-          <a
-            href="#"
-            className="inline-block bg-[#223a3d] hover:bg-[#1a202c] text-white text-[11px] font-black uppercase tracking-[0.2em] px-10 py-4 transition-all duration-300 shadow-md"
-          >
-            Read More
-          </a>
-        </div>
-
-        {/* Right: Guard Image */}
-        <div className="flex-1 flex justify-center w-full">
-          <div className="relative w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[500px] aspect-square bg-[#009688] rounded-[2rem] flex items-end justify-center shadow-xl overflow-hidden">
-            <img
-              src={guardPhoto}
-              alt="Liberty Security Guard"
-              className="h-[100%] w-auto object-contain object-bottom drop-shadow-2xl"
-            />
-          </div>
-        </div>
+        {/* Hamburger Button */}
+        <button
+          className="lg:hidden text-white focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-16 border-t-2 border-[#009688] opacity-40" />
-    </section>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div style={{ backgroundColor: 'rgba(10, 32, 29, 0.97)' }} className="lg:hidden px-6 pb-6">
+          <ul className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <Link
+                  to={link.path}
+                  onClick={() => setMenuOpen(false)}
+                  className={`text-sm font-medium transition-colors duration-200 block py-2 border-b border-white/10 ${
+                    isActive(link.path)
+                      ? 'text-[#3DD5C6]'
+                      : 'text-white hover:text-teal-300'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
   )
 }
