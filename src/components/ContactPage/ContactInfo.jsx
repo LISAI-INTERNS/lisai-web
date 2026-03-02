@@ -23,7 +23,7 @@ export default function ContactInfo() {
         </svg>
       ),
       title: 'Head Office',
-      lines: ['Suite 302 Blessingking Bldg,', '440 Rizal Ave Ext, Bet. 9th & 10th Ave,', 'East Grace Park, Caloocan, Metro Manila'],
+      lines: ['Suite 302, Eleongsing Bldg, 440 Rizal Ave Ext, Grace Park East, Caloocan, 1400 Metro Manila'],
     },
     {
       icon: (
@@ -32,7 +32,9 @@ export default function ContactInfo() {
         </svg>
       ),
       title: 'Phone',
-      lines: ['0917-6381250', '(+632) 83040195', '(+632) 73667875'],
+      lines: ['0917 638 1250', '(+632) 8364 0165'],
+
+    
     },
     {
       icon: (
@@ -41,7 +43,7 @@ export default function ContactInfo() {
         </svg>
       ),
       title: 'Email',
-      lines: ['alibertylnvestigation_inc@yahoo.com', 'libertyinvestigation_inc@yahoo.com'],
+      lines: ['admin@libertysecurityph.com', 'libertyinvestigation_inc@yahoo.com'],
     },
     {
       icon: (

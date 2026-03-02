@@ -12,7 +12,7 @@ export default function TrainingProgram() {
   return (
     <section className="bg-gray-50 py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <p className="text-xs text-gray-400 uppercase tracking-widest mb-6">Our Training Partner</p>
+        <p className="text-xs text-gray-500 uppercase tracking-widest mb-6">Our Training Partner</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Left */}
@@ -21,7 +21,7 @@ export default function TrainingProgram() {
               <img src={palacioLogo} alt="Palacio Logo" className="w-10 h-10 object-contain" />
               <div>
                 <p className="font-semibold text-gray-800 text-sm">Palacio Security Training Academy Inc.</p>
-                <p className="text-xs text-gray-400">Sister Company of LISAI</p>
+                <p className="text-xs text-gray-500">Sister Company of LISAI</p>
               </div>
             </div>
 

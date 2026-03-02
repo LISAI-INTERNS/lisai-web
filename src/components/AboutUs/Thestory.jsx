@@ -1,9 +1,9 @@
 import captPalacio from '../../assets/Capt-Palacio.png'
 
 const stats = [
-  { value: '5,000', label: 'Successful Projects' },
-  { value: '5,000', label: 'Guards on Duty' },
-  { value: '5,000', label: 'Happy Customers' },
+  { value: '146', label: 'Active Clients' },
+  { value: '300+', label: 'Former Clients' },
+  { value: '600+', label: 'Security Officers' },
 ]
 
 export default function TheStory() {

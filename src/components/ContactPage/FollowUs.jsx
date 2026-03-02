@@ -2,6 +2,7 @@ const socials = [
   {
     name: 'Facebook',
     handle: '@lisai95',
+    url: 'https://www.facebook.com/lisai86', 
     color: '#1877F2',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
@@ -12,6 +13,7 @@ const socials = [
   {
     name: 'Instagram',
     handle: '@lisai.official',
+    url: 'https://www.instagram.com/lisai.official', 
     color: '#E1306C',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -22,6 +24,7 @@ const socials = [
   {
     name: 'TikTok',
     handle: '@libertysecurityph',
+    url: 'https://www.tiktok.com/@libertysecurityph', 
     color: '#010101',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
@@ -32,6 +35,7 @@ const socials = [
   {
     name: 'LinkedIn',
     handle: 'LISAI PH',
+    url: 'https://www.linkedin.com/in/lisai-ph/?originalSubdomain=ph', 
     color: '#0A66C2',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
@@ -58,29 +62,37 @@ export default function FollowUs() {
           Stay up to date with news, security tips, and updates from our team.
         </p>
 
-        {/* 2 cols on mobile, 4 on sm+ */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
           {socials.map((s) => (
-            <div
+            <a
               key={s.name}
-              className="flex flex-col items-center gap-3 py-5 px-3 cursor-pointer"
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center gap-3 py-5 px-3 cursor-pointer no-underline group"
               style={{
                 background: 'rgba(255,255,255,0.07)',
                 border: '1px solid rgba(61,213,198,0.15)',
-                transition: 'background 0.2s',
+                transition: 'all 0.2s',
               }}
-              onMouseEnter={e => e.currentTarget.style.background = 'rgba(61,213,198,0.12)'}
-              onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.07)'}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = 'rgba(61,213,198,0.12)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'rgba(255,255,255,0.07)';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
             >
               <div
-                className="w-11 h-11 flex items-center justify-center"
+                className="w-11 h-11 flex items-center justify-center shadow-lg"
                 style={{ backgroundColor: s.color, borderRadius: '8px' }}
               >
                 {s.icon}
               </div>
               <p className="text-white font-semibold text-sm">{s.name}</p>
               <p className="text-white/50 text-xs">{s.handle}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

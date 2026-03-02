@@ -21,13 +21,13 @@ export default function TalkToTeam() {
           <div className="border border-gray-300 rounded-lg p-6 sm:p-8 flex flex-col items-center justify-center">
             <p className="text-[13px] text-[#009688] font-bold uppercase tracking-widest mb-3">Call Us</p>
             <p className="text-gray-800 text-sm font-semibold text-center">
-              0917-6381250<br />(+632) 83640165
+              0917 638 1250<br />(+632) 8364 0165
             </p>
           </div>
           <div className="border border-gray-300 rounded-lg p-6 sm:p-8 flex flex-col items-center justify-center">
             <p className="text-[13px] text-[#009688] font-bold uppercase tracking-widest mb-3">Email Us</p>
-            <p className="text-gray-800 text-sm font-semibold text-center break-all">
-              libertyinvestigation_inc@yahoo.com
+            <p className="text-gray-800 text-sm font-semibold text-center">
+              admin@libertysecurityph.com <br /> libertyinvestigation_inc@yahoo.com
             </p>
           </div>
           <div className="border border-gray-300 rounded-lg p-6 sm:p-8 flex flex-col items-center justify-center">

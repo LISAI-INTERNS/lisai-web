@@ -81,7 +81,7 @@ export default function JobsHero() {
       <div className="relative z-10 py-5 px-6 mt-6" style={{ backgroundColor: '#0f766e' }}>
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           {[
-            { value: '5,000+', label: 'Guards Deployed' },
+            { value: '600+', label: 'Guards Deployed' },
             { value: '40+',    label: 'Years in Industry' },
             { value: 'SOSIA',  label: 'Accredited Training' },
             { value: 'Full-Time', label: 'Positions Available' },

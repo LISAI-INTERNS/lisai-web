@@ -11,7 +11,7 @@ const benefits = [
   { title: 'Competitive Pay', description: 'Salary aligned with DOLE standards and industry rates' },
   { title: 'Paid Training', description: 'SOSIA-accredited courses through Palacio Training Academy' },
   { title: 'Benefits Package', description: 'SSS, PhilHealth, Pag-IBIG, and 13th-month pay' },
-  { title: 'Stable Employment', description: '40+ years of company stability with 5,000+ active guards' },
+  { title: 'Stable Employment', description: '40+ years of company stability with 600+ active guards' },
   { title: 'Career Growth', description: 'Clear path from guard to supervisor and senior roles' },
   { title: 'Flexible Posting', description: 'Assignments across Metro Manila in diverse industries' },
 ]
@@ -37,7 +37,7 @@ export default function BasicRequirements() {
                   </div>
                   <p style={{ color: '#374151', fontSize: '14px' }}>{req}</p>
                 </div>
-                <div className="border-b border-gray-200" />
+                <div className="border-b border-gray-400" />
               </div>
             ))}
           </div>
@@ -50,7 +50,7 @@ export default function BasicRequirements() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {benefits.map((benefit) => (
-              <div key={benefit.title} className="border border-gray-200 rounded-lg p-4 hover:shadow-sm transition">
+              <div key={benefit.title} className="border border-gray-400 rounded-lg p-4 hover:shadow-sm transition">
                 <h3 className="font-semibold text-gray-800 text-sm mb-1">{benefit.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{benefit.description}</p>
               </div>
