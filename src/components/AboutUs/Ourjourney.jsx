@@ -41,8 +41,8 @@ export default function OurJourney() {
           </p>
         </div>
 
-        {/* Timeline grid — 2 cols on mobile, 4 on desktop */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative z-10">
+        {/* 1 col on mobile, 4 col on desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 relative z-10">
           {milestones.map((m) => (
             <div key={m.year} className="flex flex-col items-center">
               <div className="w-3 h-3 rounded-full bg-teal-500 border-2 border-white shadow mb-4" />
