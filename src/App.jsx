@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react';
 import Navbar from './components/Home Page/Navbar'
 import Footer from './components/Home Page/Footer'
 import Hero from './components/Home Page/Hero'
@@ -12,6 +13,11 @@ import JobsPage from './components/JobsPage/JobsPage'
 import ContactPage from './components/ContactPage/ContactPage'
 
 function HomePage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Hero />
