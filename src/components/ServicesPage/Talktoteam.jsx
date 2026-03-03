@@ -9,12 +9,9 @@ export default function TalkToTeam() {
         <p className="text-gray-500 text-sm max-w-lg mx-auto mb-8 leading-relaxed">
           Reach out directly and we'll match you with the right service — no obligation, no runaround. Just a straightforward conversation about protecting what matters to you.
         </p>
-        <a
-          href="#"
-          className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold text-sm px-8 py-3 rounded transition-colors duration-300 mb-12"
-        >
-          Send us a Message
-        </a>
+<a href="/contact#contact-info" className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold text-sm px-8 py-3 rounded transition-colors duration-300 mb-12">
+  Send us a Message
+</a>
 
         {/* Contact Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">

@@ -40,24 +40,28 @@ export default function FAQ() {
         <div className="flex-1 space-y-3">
           {faqs.map((faq, i) => {
             const isOpen = openIndex === i
+            // Unified background color for both states
+            const bgColor = "bg-white/80" 
+            
             return (
               <div
                 key={faq.question}
-                className="rounded-xl overflow-hidden border border-white/40"
+                className={`rounded-xl overflow-hidden border border-white/40 transition-all duration-300 ${bgColor}`}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className={`w-full flex justify-between items-center px-5 sm:px-6 py-4 sm:py-5 text-left transition-all duration-300 ${
-                    isOpen ? 'bg-teal-500 text-white' : 'bg-white/60 hover:bg-white/80 text-gray-800'
-                  }`}
+                  className="w-full flex justify-between items-center px-5 sm:px-6 py-4 sm:py-5 text-left text-gray-800"
                 >
                   <span className="text-sm sm:text-base font-semibold pr-4">{faq.question}</span>
-                  <span className={`text-lg flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-white' : 'text-gray-400'}`}>
+                  <span className={`text-lg flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-gray-900' : 'text-gray-400'}`}>
                     ▼
                   </span>
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="bg-teal-500 px-5 sm:px-6 pb-5 text-sm text-white/90 leading-relaxed">
+                
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
+                >
+                  <div className="px-5 sm:px-6 pb-5 text-sm leading-relaxed text-gray-700">
                     {faq.answer}
                   </div>
                 </div>
