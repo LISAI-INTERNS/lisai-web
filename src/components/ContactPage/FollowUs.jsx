@@ -1,7 +1,7 @@
 const socials = [
   {
     name: 'Facebook',
-    handle: '@lisai95',
+    handle: '@lisai',
     url: 'https://www.facebook.com/lisai86', 
     color: '#1877F2',
     icon: (
