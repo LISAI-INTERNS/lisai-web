@@ -47,12 +47,7 @@ export default function AboutHero() {
           </p>
 
           <div className="flex flex-row flex-wrap gap-3 justify-center lg:justify-start">
-            <button
-            onClick={() => navigate('/services')} 
-              className="bg-[#0f766e] hover:bg-[#0d6460] text-white text-xs font-bold px-8 py-3 uppercase tracking-widest transition-colors duration-200 scroll-mt-[150px]"
-              >
-              Get A Quote
-            </button>
+
           <button
               onClick={() => navigate('/contact#contact-info')} 
               className="bg-transparent hover:bg-white/10 text-white border-2 border-white/40 hover:border-white/70 text-xs font-bold px-8 py-3 uppercase tracking-widest transition-all duration-200 scroll-mt-[150px]"

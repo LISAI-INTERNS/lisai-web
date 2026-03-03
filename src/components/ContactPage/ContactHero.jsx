@@ -73,14 +73,6 @@ export default function ContactHero() {
           From guarding your business premises to protecting high-profile individuals — a full range of professional security services tailored to your needs.
         </p>
 
-        <div className="flex flex-row flex-wrap gap-3">
-          <button className="bg-[#0f766e] hover:bg-[#0d6460] text-white text-xs font-bold px-8 py-3 uppercase tracking-widest transition-colors duration-200">
-            Get A Free Quote
-          </button>
-          <button className="bg-transparent hover:bg-white/10 text-white border-2 border-white/40 hover:border-white/70 text-xs font-bold px-8 py-3 uppercase tracking-widest transition-all duration-200">
-            Contact Us
-          </button>
-        </div>
       </div>
 
       {/* Bottom accent line */}
