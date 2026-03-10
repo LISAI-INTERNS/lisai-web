@@ -1,9 +1,10 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+import { useLang } from '../../i18n/useLang'
 import heroBg from '../../assets/Hero-BG-LISAI-Guard.png'
 
-
 export default function Hero() {
- const navigate = useNavigate()
+  const navigate = useNavigate()
+  const { t } = useLang()
 
   return (
     <section
@@ -14,23 +15,14 @@ export default function Hero() {
         backgroundPosition: '70% center',
       }}
     >
-      {/* Desktop overlay — directional left to right */}
       <div
         className="absolute inset-0 z-0 hidden lg:block"
-        style={{
-          background: 'linear-gradient(to right, rgba(11,46,42,0.97) 0%, rgba(11,46,42,0.78) 50%, rgba(11,46,42,0.25) 100%)',
-        }}
+        style={{ background: 'linear-gradient(to right, rgba(11,46,42,0.97) 0%, rgba(11,46,42,0.78) 50%, rgba(11,46,42,0.25) 100%)' }}
       />
-
-      {/* Mobile overlay — strong at bottom, fades upward so guard shows */}
       <div
         className="absolute inset-0 z-0 lg:hidden"
-        style={{
-          background: 'linear-gradient(to top, rgba(11,46,42,0.97) 0%, rgba(11,46,42,0.85) 45%, rgba(11,46,42,0.2) 75%, rgba(11,46,42,0.0) 100%)',
-        }}
+        style={{ background: 'linear-gradient(to top, rgba(11,46,42,0.97) 0%, rgba(11,46,42,0.85) 45%, rgba(11,46,42,0.2) 75%, rgba(11,46,42,0.0) 100%)' }}
       />
-
-      {/* Noise grain */}
       <div
         className="absolute inset-0 z-0 opacity-20 pointer-events-none"
         style={{
@@ -41,30 +33,22 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 flex justify-start pb-14 lg:pb-0">
         <div className="w-full max-w-xl lg:ml-16">
-
-          {/* Eyebrow */}
           <p className="text-[#3DD5C6] text-xs font-bold uppercase tracking-[0.25em] mb-5">
             Est. 1982 · Philippine Security
           </p>
-
           <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl leading-[1.05] mb-5 uppercase tracking-tight">
-            Securing Trust<br />
-            For Over Four<br />
-            Decades
+            {t('home.hero.title')}
           </h1>
-
           <p className="text-white/75 text-sm sm:text-base font-medium mb-8 max-w-md leading-relaxed">
-            Pioneers in the Philippine security industry since 1982.
-            We provide proven, reliable protection for businesses and individuals alike.
+            {t('home.hero.subtitle')}
           </p>
-
           <div className="flex flex-row gap-3">
-          <button
-              onClick={() => navigate('/contact#contact-info')} 
-              className="bg-transparent hover:bg-white/10 text-white border-2 border-white/40 hover:border-white/70 text-xs font-bold px-8 py-3 uppercase tracking-widest transition-all duration-200 scroll-mt-[150px]"
+            <button
+              onClick={() => navigate('/contact#contact-info')}
+              className="bg-transparent hover:bg-white/10 text-white border-2 border-white/40 hover:border-white/70 text-xs font-bold px-8 py-3 uppercase tracking-widest transition-all duration-200"
             >
-              Contact Us
-          </button>
+              {t('home.hero.learnMore')}
+            </button>
           </div>
         </div>
       </div>

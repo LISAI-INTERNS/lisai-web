@@ -1,44 +1,45 @@
+import { useLang } from '../../i18n/useLang'
 import guardPhoto from '../../assets/Guard-Element-Home.png'
 
-const stats = [
-  { value: '146', label: 'Active Clients' },
-  { value: '300+', label: 'Former Clients' },
-  { value: '600+', label: 'Security Officers' },
+const statKeys = [
+  { value: '146', labelKey: 'about.stats.guards' },
+  { value: '300+', labelKey: 'about.stats.years' },
+  { value: '600+', labelKey: 'about.stats.industries' },
 ]
 
 export default function AboutUs() {
+  const { t } = useLang()
+
   return (
     <section className="bg-white py-16 sm:py-20 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
-        {/* Left: Content */}
+        {/* Left */}
         <div className="flex-1 w-full text-center lg:text-left">
           <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#1a202c] mb-2">
-            About Us
+            {t('about.hero.label')}
           </p>
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-[900] text-[#2d3748] leading-[1.1] mb-6 tracking-tight">
-            Built on <span className="text-[#009688]">Integrity,</span><br />
-            Bound by <span className="text-[#009688]">Trust.</span>
+            {t('home.about.title')}
           </h2>
 
           <p className="text-[#4a5568] text-base mb-8 leading-relaxed opacity-90 max-w-md mx-auto lg:mx-0">
-            Over four decades of unmatched dedication to safeguarding your lives and assets.
+            {t('home.about.body')}
           </p>
 
-          {/* Stats */}
           <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 mb-10 flex-wrap">
-            {stats.map((stat, i) => (
-              <div key={stat.label} className="flex gap-6 sm:gap-8 items-center">
+            {statKeys.map((stat, i) => (
+              <div key={stat.labelKey} className="flex gap-6 sm:gap-8 items-center">
                 <div className="flex flex-col items-center lg:items-start">
                   <span className="text-[#009688] font-black text-2xl sm:text-3xl leading-none">
                     {stat.value}
                   </span>
                   <span className="text-[#718096] text-[10px] font-bold uppercase tracking-wider mt-2 leading-tight w-20 text-center lg:text-left">
-                    {stat.label}
+                    {t(stat.labelKey)}
                   </span>
                 </div>
-                {i < stats.length - 1 && (
+                {i < statKeys.length - 1 && (
                   <div className="h-10 w-[1.5px] bg-[#009688] opacity-20" />
                 )}
               </div>
@@ -46,14 +47,14 @@ export default function AboutUs() {
           </div>
 
           <a
-            href="about"
+            href="/about"
             className="inline-block bg-[#223a3d] hover:bg-[#1a202c] text-white text-[11px] font-black uppercase tracking-[0.2em] px-10 py-4 transition-all duration-300 shadow-md"
           >
-            Read More
+            {t('home.about.learnMore')}
           </a>
         </div>
 
-        {/* Right: Guard Image */}
+        {/* Right */}
         <div className="flex-1 flex justify-center w-full">
           <div className="relative w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[500px] aspect-square bg-[#009688] rounded-[2rem] flex items-end justify-center shadow-xl overflow-hidden">
             <img

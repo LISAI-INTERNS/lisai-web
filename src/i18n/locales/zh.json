@@ -1,0 +1,323 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "jobs": "招聘",
+    "contact": "联系我们",
+    "getQuote": "免费报价"
+  },
+  "footer": {
+    "tagline": "四十余年来，守护马尼拉都会区的生命与财产安全。",
+    "quickLinks": "快速链接",
+    "services": "服务项目",
+    "contact": "联系方式",
+    "businessSecurity": "商业安保",
+    "assetSecurity": "资产与土地安保",
+    "personalSecurity": "个人安保",
+    "corporateProtection": "企业保护",
+    "address": "卡洛奥坎市格雷斯公园，Blessingking大厦302室",
+    "rights": "版权所有。",
+    "company": "自由调查与安保机构股份有限公司"
+  },
+  "home": {
+    "hero": {
+      "tagline": "SOSIA 持牌认证",
+      "title": "您的安全，我们的使命",
+      "subtitle": "专业安保服务，四十余年来深受马尼拉都会区企业与个人信赖。",
+      "getQuote": "免费报价",
+      "learnMore": "了解更多"
+    },
+    "services": {
+      "label": "我们的服务",
+      "title": "核心服务",
+      "business": "商业安保",
+      "businessDesc": "为您的设施、员工及资产提供警觉性保护。",
+      "asset": "资产与土地安保",
+      "assetDesc": "保护空置物业及公司存货安全。",
+      "personal": "个人安保",
+      "personalDesc": "为知名人士提供低调的贴身保护。",
+      "corporate": "企业保护",
+      "corporateDesc": "为办公室及私人庄园提供全天候安保服务。"
+    },
+    "about": {
+      "label": "关于我们",
+      "title": "逾40年值得信赖的安保服务",
+      "body": "自由调查与安保机构股份有限公司自1983年起守护马尼拉都会区。拥有逾5,000名在职保安人员及SOSIA认证，我们为每位客户提供量身定制的专业安保方案。",
+      "learnMore": "进一步了解我们"
+    },
+    "contact": {
+      "label": "联系我们",
+      "title": "与我们探讨您的安保需求",
+      "subtitle": "请与我们联系，我们将于一个工作日内回复。",
+      "name": "您的姓名",
+      "email": "电子邮件地址",
+      "message": "您的留言",
+      "send": "发送信息"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "关于我们",
+      "title": "数十年专注守护",
+      "subtitle": "自1983年起，LISAI一直是马尼拉都会区最值得信赖的安保机构之一。"
+    },
+    "story": {
+      "label": "我们的故事",
+      "title": "以信任为基，以服务为驱",
+      "body": "自由调查与安保机构股份有限公司秉持一个简单信念——每个人和每家企业都应该拥有安全感。四十年来，我们从一支小团队成长为在整个地区部署逾5,000名保安人员的机构。"
+    },
+    "journey": {
+      "label": "发展历程",
+      "title": "定义我们的里程碑",
+      "1983": "于卡洛奥坎市创立",
+      "1990": "保安人数扩展至500人以上",
+      "2000": "获得SOSIA认证",
+      "2010": "创立Palacio培训学院",
+      "2023": "在职保安人数逾5,000人"
+    },
+    "industries": {
+      "label": "服务对象",
+      "title": "我们守护的行业",
+      "logistics": "物流与运输",
+      "warehouses": "仓库与库房",
+      "residential": "住宅小区",
+      "offices": "办公室与企业大楼",
+      "shopping": "购物中心与零售业",
+      "highProfile": "知名人士"
+    },
+    "faq": {
+      "label": "常见问题",
+      "title": "常见问题解答",
+      "q1": "您的保安人员是否获得SOSIA认证？",
+      "a1": "是的。我们所有保安人员均通过Palacio安保培训学院的SOSIA认证培训。",
+      "q2": "您们的服务范围涵盖哪些地区？",
+      "a2": "我们主要服务于马尼拉都会区及邻近省份。",
+      "q3": "保安人员可以多快部署到位？",
+      "a3": "根据需求规模，我们可在24至72小时内完成部署。",
+      "q4": "是否提供女性保安人员？",
+      "a4": "是的，我们备有经过培训的女性保安人员，可分配至合适的岗位。"
+    },
+    "stats": {
+      "guards": "在职保安人员",
+      "years": "行业经验年数",
+      "accredited": "SOSIA认证",
+      "industries": "服务行业数"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "我们的服务",
+      "title": "应对各类威胁的安保方案",
+      "subtitle": "从守护您的商业场所到保护知名人士——我们提供全方位专业安保服务，满足您的个性化需求。",
+      "getQuote": "免费报价",
+      "contact": "联系我们"
+    },
+    "our": {
+      "label": "服务项目",
+      "title": "我们的安保服务",
+      "subtitle": "每项服务均以同一目标为核心——您的安全。我们为您的具体情况匹配合适的团队与方案。",
+      "business": "商业安保",
+      "businessDesc": "通过警觉性巡逻、监控设备监测及建筑物设备检查，确保设施与员工安全。",
+      "asset": "资产与土地安保",
+      "assetDesc": "擅长保护企业资产（包括存货与库存），并通过防止擅自进入和占用，确保空置物业及建筑物的安全。",
+      "personal": "个人安保",
+      "personalDesc": "知名人士及企业面临跟踪骚扰、抗议等各类威胁。我们的个人安保方案将您的安危置于首位，让您自信地追求人生目标。",
+      "corporate": "企业及私人物业保护",
+      "corporateDesc": "为企业办公室、住宅及私人庄园提供全天候安保。我们运用先进技术及精英人员，确保您的资产与物业安全无虞。"
+    },
+    "how": {
+      "label": "服务流程",
+      "title": "我们如何保护您",
+      "subtitle": "从初次接触到全面部署，流程清晰简明——无需猜测，无需等待。",
+      "step1": "初步咨询",
+      "step1Desc": "我们与您探讨具体的安保需求、顾虑及要求——简便无忧。",
+      "step2": "现场评估",
+      "step2Desc": "我们的团队对您的场所进行全面评估，识别潜在风险点。",
+      "step3": "定制安保方案",
+      "step3Desc": "我们为您量身设计方案，并调配合适的人员及设备。",
+      "step4": "部署与监控",
+      "step4Desc": "保安人员就位后，运营情况将持续受到监控，让您安心无忧。"
+    },
+    "industries": {
+      "label": "服务对象",
+      "title": "我们守护的行业",
+      "subtitle": "我们的保安人员在各类环境与行业中积累了丰富经验，为每个领域提供专业保护。",
+      "logistics": "物流与运输",
+      "warehouses": "仓库与库房",
+      "residential": "住宅小区",
+      "offices": "办公室与企业大楼",
+      "shopping": "购物中心与零售业",
+      "highProfile": "知名人士"
+    },
+    "different": {
+      "label": "为何选择LISAI",
+      "title": "我们的服务有何不同",
+      "subtitle": "我们不只是派遣保安了事。每次合作均以系统培训、妥善监督及对您长期安全的承诺为后盾。",
+      "years": "经过验证的行业经验年数",
+      "accredited": "持牌认证"
+    },
+    "talk": {
+      "label": "准备好开始了吗？",
+      "title": "立即联系我们的安保团队",
+      "subtitle": "直接与我们联系，我们将为您匹配合适的服务——无任何附加条件，不绕弯子。只是一次关于保护您所珍视之物的坦诚对话。",
+      "cta": "发送信息",
+      "call": "致电我们",
+      "email": "发送邮件",
+      "hours": "办公时间",
+      "hoursVal": "周一至周六：上午8时至下午5时"
+    }
+  },
+  "jobs": {
+    "hero": {
+      "label": "招聘 / 培训",
+      "wanted": "诚聘：",
+      "position": "保安人员",
+      "subtitle": "您有兴趣从事保安工作吗？加入我们出色的团队，迈出职业生涯的第一步。",
+      "getQuote": "免费报价",
+      "contact": "联系我们",
+      "stat1": "在职保安人员",
+      "stat2": "行业经验年数",
+      "stat3": "认证培训",
+      "stat4": "职位空缺"
+    },
+    "positions": {
+      "label": "空缺职位",
+      "title": "我们正在招聘",
+      "subtitle": "我们自豪地提供全面的培训课程，为有志于在安保行业出人头地的人才提供装备。部分职位无需工作经验。",
+      "role": "保安人员",
+      "roleDesc": "负责保护客户场所安全、进行巡逻、监控监控设备，以及维持指定岗位的秩序。",
+      "fullTime": "全职",
+      "benefits": "福利及奖金",
+      "sosia": "SOSIA认证",
+      "apply": "申请此职位 →"
+    },
+    "training": {
+      "label": "培训合作伙伴",
+      "academy": "Palacio安保培训学院股份有限公司",
+      "sister": "LISAI的姐妹公司",
+      "title": "全面的安保培训",
+      "body": "我们与姐妹公司Palacio安保培训学院股份有限公司合作，为团队成员提供全面的安保教育与培训。课程涵盖多个主题——从工作职责、防盗到危机应对及风险管理。",
+      "c1": "保安人员的职责",
+      "c2": "预防商业场所盗窃",
+      "c3": "急救与基本生命支持",
+      "c4": "安保服务的道德与行为规范",
+      "c5": "抗压能力与风险管理",
+      "enroll": "立即报名 · 名额有限",
+      "program": "保安人员培训课程",
+      "scheduleLabel": "课程时间",
+      "scheduleVal": "定期开班——请咨询下一期可用日期",
+      "locationLabel": "地点",
+      "locationVal": "卡洛奥坎格雷斯公园，Blessingking大厦302室",
+      "certLabel": "认证",
+      "certVal": "完成后获SOSIA认可证书",
+      "facebook": "在Facebook了解更多",
+      "applyBtn": "申请职位"
+    },
+    "requirements": {
+      "title": "基本要求",
+      "r1": "菲律宾公民，男女均可，21至45岁",
+      "r2": "至少高中毕业（优先考虑高级高中）",
+      "r3": "身心健康，无犯罪记录",
+      "r4": "愿意接受SOSIA认证培训",
+      "r5": "能够轮班工作",
+      "r6": "持有效NBI无犯罪记录证明及社区证明",
+      "whyTitle": "为何加入LISAI",
+      "b1Title": "具竞争力的薪酬",
+      "b1Desc": "薪资符合劳工部标准及行业水平",
+      "b2Title": "带薪培训",
+      "b2Desc": "通过Palacio培训学院获得SOSIA认证课程",
+      "b3Title": "福利待遇",
+      "b3Desc": "涵盖SSS、菲健保、Pag-IBIG及第13个月薪金",
+      "b4Title": "稳定就业",
+      "b4Desc": "公司稳健运营逾40年，在职保安逾5,000人",
+      "b5Title": "职业晋升",
+      "b5Desc": "从保安到主管及高级职位的清晰晋升路径",
+      "b6Title": "灵活调配",
+      "b6Desc": "在马尼拉都会区各行各业均有岗位安排"
+    },
+    "join": {
+      "title": "加入LISAI大家庭",
+      "highlight": "即刻行动",
+      "subtitle": "成为这支守护马尼拉都会区生命与财产安全逾四十年团队的一员。",
+      "facebook": "在Facebook了解更多",
+      "apply": "申请职位"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "联系我们",
+      "title": "我们随时为您服务",
+      "subtitle": "请联系我们的团队，我们将于一个工作日内回复您。"
+    },
+    "info": {
+      "address": "地址",
+      "phone": "电话",
+      "email": "电子邮件",
+      "hours": "办公时间",
+      "hoursVal": "周一至周六：上午8时至下午5时",
+      "formTitle": "发送信息",
+      "name": "全名",
+      "phonePlaceholder": "09XX XXX XXXX",
+      "emailPlaceholder": "juan@email.com",
+      "messagePlaceholder": "请告诉我们您的安保需求……",
+      "send": "发送信息"
+    },
+    "social": {
+      "label": "关注我们",
+      "title": "与LISAI保持联系",
+      "subtitle": "关注我们的社交媒体，获取最新动态、招聘信息及安保资讯。"
+    }
+  },
+  "apply": {
+    "intro": {
+      "label": "申请流程",
+      "applying": "申请职位",
+      "expectLabel": "申请流程说明",
+      "e1": "填写简短的申请表——约需3分钟。",
+      "e2": "附上您的简历或相关文件。",
+      "e3": "我们的人力资源团队将审核您的申请，并于3至5个工作日内与您联系。",
+      "e4": "获选申请人将受邀参加面试。",
+      "proceed": "前往申请表 →",
+      "exit": "退出"
+    },
+    "form": {
+      "label": "职位申请",
+      "subtitle": "请填写以下所有字段。我们的人力资源团队将于3至5个工作日内与您联系。",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "phone": "电话号码",
+      "email": "电子邮件地址",
+      "position": "申请职位",
+      "experience": "工作经验年数",
+      "expNone": "无经验——愿意接受培训",
+      "expLess1": "不足1年",
+      "exp1to3": "1至3年",
+      "exp3to5": "3至5年",
+      "exp5plus": "5年以上",
+      "employer": "前雇主",
+      "intro": "简短自我介绍",
+      "resume": "简历 / CV",
+      "uploadLabel": "点击上传",
+      "uploadHint": "PDF、DOC、DOCX格式（最大5MB）",
+      "submit": "提交申请",
+      "submitting": "提交中……",
+      "consent": "提交即表示您同意由LISAI人力资源团队审核您的个人信息。",
+      "exit": "退出",
+      "optional": "（选填）",
+      "required": "*",
+      "successTitle": "申请已提交",
+      "successBody": "感谢您，{{name}}。我们已收到您申请{{position}}职位的资料。我们的人力资源团队将于3至5个工作日内与您联系。",
+      "backJobs": "← 返回招聘页面",
+      "errFirstName": "请填写名字。",
+      "errLastName": "请填写姓氏。",
+      "errPhone": "请填写电话号码。",
+      "errPhoneInvalid": "请输入有效的菲律宾电话号码（例如09XX XXX XXXX或+639XX XXX XXXX）。",
+      "errEmail": "请输入有效的电子邮件地址。",
+      "errResume": "请上传您的简历或CV。",
+      "errGeneric": "出现错误，请重试或直接发送电子邮件联系我们。",
+      "errNetwork": "网络错误，请检查您的网络连接后重试。",
+      "fileSizeErr": "文件超过5MB限制，请上传较小的文件。"
+    }
+  }
+}

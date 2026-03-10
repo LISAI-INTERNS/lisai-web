@@ -1,0 +1,323 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "jobs": "Jobs",
+    "contact": "Contact",
+    "getQuote": "Get a Free Quote"
+  },
+  "footer": {
+    "tagline": "Protecting lives and assets across Metro Manila for over 40 years.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "businessSecurity": "Business Security",
+    "assetSecurity": "Asset & Land Security",
+    "personalSecurity": "Personal Security",
+    "corporateProtection": "Corporate Protection",
+    "address": "Suite 302 Blessingking Bldg, Grace Park, Caloocan City",
+    "rights": "All rights reserved.",
+    "company": "Liberty Investigation & Security Agency Inc."
+  },
+  "home": {
+    "hero": {
+      "tagline": "SOSIA Licensed & Accredited",
+      "title": "Your Safety Is Our Mission",
+      "subtitle": "Professional security services trusted by businesses and individuals across Metro Manila for over 40 years.",
+      "getQuote": "Get a Free Quote",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "label": "What We Offer",
+      "title": "Our Core Services",
+      "business": "Business Security",
+      "businessDesc": "Vigilant protection for your facilities, staff, and assets.",
+      "asset": "Asset & Land Security",
+      "assetDesc": "Securing vacant properties and company inventories.",
+      "personal": "Personal Security",
+      "personalDesc": "Discreet protection for high-profile individuals.",
+      "corporate": "Corporate Protection",
+      "corporateDesc": "Round-the-clock security for offices and private estates."
+    },
+    "about": {
+      "label": "Who We Are",
+      "title": "40+ Years of Trusted Security",
+      "body": "Liberty Investigation & Security Agency Inc. has been protecting Metro Manila since 1983. With over 5,000 active guards and SOSIA accreditation, we deliver professional security solutions tailored to every client.",
+      "learnMore": "Learn More About Us"
+    },
+    "contact": {
+      "label": "Get In Touch",
+      "title": "Let's Talk About Your Security",
+      "subtitle": "Reach out and we'll respond within one business day.",
+      "name": "Your Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About Us",
+      "title": "Decades of Dedicated Protection",
+      "subtitle": "Since 1983, LISAI has stood as one of Metro Manila's most trusted security agencies."
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "Built on Trust, Driven by Service",
+      "body": "Liberty Investigation & Security Agency Inc. was founded with a simple belief — that every person and business deserves to feel safe. Over four decades, we've grown from a small team to over 5,000 deployed guards across the region."
+    },
+    "journey": {
+      "label": "Our Journey",
+      "title": "Milestones That Define Us",
+      "1983": "Founded in Caloocan City",
+      "1990": "Expanded to 500+ guards",
+      "2000": "SOSIA accreditation achieved",
+      "2010": "Launched Palacio Training Academy",
+      "2023": "5,000+ active guards deployed"
+    },
+    "industries": {
+      "label": "Who We Serve",
+      "title": "Industries We've Protected",
+      "logistics": "Logistics & Transportation",
+      "warehouses": "Warehouses & Stockrooms",
+      "residential": "Residential Subdivisions",
+      "offices": "Offices & Corporate Buildings",
+      "shopping": "Shopping Malls & Retail",
+      "highProfile": "High-Profile Individuals"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Common Questions",
+      "q1": "Are your guards SOSIA accredited?",
+      "a1": "Yes. All our guards undergo SOSIA-accredited training through Palacio Security Training Academy Inc.",
+      "q2": "What areas do you cover?",
+      "a2": "We operate primarily across Metro Manila and nearby provinces.",
+      "q3": "How quickly can guards be deployed?",
+      "a3": "We can deploy within 24–72 hours depending on the scale of your requirement.",
+      "q4": "Do you offer female security guards?",
+      "a4": "Yes, we have trained female security officers available for appropriate assignments."
+    },
+    "stats": {
+      "guards": "Active Guards",
+      "years": "Years of Experience",
+      "accredited": "SOSIA Accredited",
+      "industries": "Industries Served"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Our Services",
+      "title": "Security Solutions For Every Threat",
+      "subtitle": "From guarding your business premises to protecting high-profile individuals — we offer a full range of professional security services tailored to your needs.",
+      "getQuote": "Get a free quote",
+      "contact": "Contact us"
+    },
+    "our": {
+      "label": "Our Services",
+      "title": "Our Security Services",
+      "subtitle": "Every service is designed with one goal in mind — your safety. We match the right team and approach to your specific situation.",
+      "business": "Business Security",
+      "businessDesc": "Ensuring the safety of facilities and staff through vigilant property patrols, diligent surveillance equipment monitoring, and thorough inspections of buildings and equipment.",
+      "asset": "Asset & Land Security",
+      "assetDesc": "Highly proficient in protecting company assets — including inventories and stocks — and ensuring the security of vacant properties and buildings by preventing unauthorized entry and squatting.",
+      "personal": "Personal Security",
+      "personalDesc": "Prominent individuals and corporate entities face various threats, from stalkers to protests. Our personal security packages prioritize your well-being, granting you the freedom to pursue your goals confidently.",
+      "corporate": "Corporate & Private Property Protection",
+      "corporateDesc": "Round-the-clock security for corporate offices, residences, and private estates. We use advanced technology and highly trained personnel to ensure the safety and security of your assets and premises."
+    },
+    "how": {
+      "label": "Our Process",
+      "title": "How We Get You Protected",
+      "subtitle": "A straightforward process from first contact to full deployment — no guesswork, no delays.",
+      "step1": "Initial Consultation",
+      "step1Desc": "We discuss your specific security needs, concerns, and requirements — no hassle.",
+      "step2": "Site Assessment",
+      "step2Desc": "Our team conducts a thorough evaluation of your location to identify vulnerabilities.",
+      "step3": "Custom Security Plan",
+      "step3Desc": "We design a tailored plan and assign the right personnel and equipment for your needs.",
+      "step4": "Deployment & Monitoring",
+      "step4Desc": "Guards are deployed and operations are continuously monitored for your peace of mind."
+    },
+    "industries": {
+      "label": "Who We Serve",
+      "title": "Industries We Protect",
+      "subtitle": "Our guards and security personnel are experienced across a wide range of environments and industries, ensuring specialized protection for every sector.",
+      "logistics": "Logistics & Transportation",
+      "warehouses": "Warehouses & Stockrooms",
+      "residential": "Residential Subdivisions",
+      "offices": "Offices & Corporate Buildings",
+      "shopping": "Shopping Malls & Retail",
+      "highProfile": "High-Profile Individuals"
+    },
+    "different": {
+      "label": "Why Choose LISAI",
+      "title": "What Makes Our Service Different",
+      "subtitle": "We don't just post a guard and walk away. Every engagement is backed by structured training, proper supervision, and a commitment to your long-term safety.",
+      "years": "Years of Proven Experience",
+      "accredited": "Licensed & Accredited"
+    },
+    "talk": {
+      "label": "Ready to Get Started?",
+      "title": "Talk to Our Security Team Today",
+      "subtitle": "Reach out directly and we'll match you with the right service — no obligation, no runaround. Just a straightforward conversation about protecting what matters to you.",
+      "cta": "Send us a Message",
+      "call": "Call Us",
+      "email": "Email Us",
+      "hours": "Office Hours",
+      "hoursVal": "Mon–Sat: 8:00 AM – 5:00 PM"
+    }
+  },
+  "jobs": {
+    "hero": {
+      "label": "Jobs / Training",
+      "wanted": "Wanted:",
+      "position": "Security Guards",
+      "subtitle": "Are you interested in a rewarding career as a security guard? Join our exceptional team and take the first step towards a fulfilling profession.",
+      "getQuote": "Get a free quote",
+      "contact": "Contact us",
+      "stat1": "Guards Deployed",
+      "stat2": "Years in the Industry",
+      "stat3": "Accredited Training",
+      "stat4": "Positions Available"
+    },
+    "positions": {
+      "label": "Open Positions",
+      "title": "We're Hiring",
+      "subtitle": "We proudly offer comprehensive training programs to equip individuals who aspire to excel in the security industry. No prior experience required for some roles.",
+      "role": "Security Guard",
+      "roleDesc": "Responsible for protecting client premises, conducting patrols, monitoring surveillance equipment, and maintaining order at assigned posts.",
+      "fullTime": "Full-Time",
+      "benefits": "Benefits & Bonuses",
+      "sosia": "SOSIA Accredited",
+      "apply": "APPLY FOR THIS ROLE →"
+    },
+    "training": {
+      "label": "Our Training Partner",
+      "academy": "Palacio Security Training Academy Inc.",
+      "sister": "Sister Company of LISAI",
+      "title": "Comprehensive Security Training",
+      "body": "We offer comprehensive security education and training to our team members in collaboration with our sister company, Palacio Security Training Academy Inc. Our programs encompass diverse topics — from job responsibilities and theft prevention to crisis response and risk management.",
+      "c1": "The Role of Security Officers",
+      "c2": "Prevention of Theft from Commercial Premises",
+      "c3": "First Aid & Basic Life Support",
+      "c4": "Ethics & Conduct in Security Service",
+      "c5": "Resilience and Risk Management",
+      "enroll": "Enroll Now · Limited Slots",
+      "program": "Security Guard Training Program",
+      "scheduleLabel": "Schedule",
+      "scheduleVal": "Batches run regularly — Inquire for next available date",
+      "locationLabel": "Location",
+      "locationVal": "Suite 302 Blessingking Bldg, Grace Park, Caloocan",
+      "certLabel": "Certification",
+      "certVal": "SOSIA-recognized upon completion",
+      "facebook": "Learn More on Facebook",
+      "applyBtn": "Apply for a Position"
+    },
+    "requirements": {
+      "title": "Basic Requirements",
+      "r1": "Filipino citizen, male or female, 21–45 years old",
+      "r2": "At least high school graduate (Senior High preferred)",
+      "r3": "Physically and mentally fit; no criminal record",
+      "r4": "Willing to undergo SOSIA-accredited training",
+      "r5": "Must be able to work in shifting schedules",
+      "r6": "Valid NBI Clearance and Barangay Clearance",
+      "whyTitle": "Why Join LISAI",
+      "b1Title": "Competitive Pay",
+      "b1Desc": "Salary aligned with DOLE standards and industry rates",
+      "b2Title": "Paid Training",
+      "b2Desc": "SOSIA-accredited courses through Palacio Training Academy",
+      "b3Title": "Benefits Package",
+      "b3Desc": "SSS, PhilHealth, Pag-IBIG, and 13th-month pay",
+      "b4Title": "Stable Employment",
+      "b4Desc": "40+ years of company stability with 5,000+ active guards",
+      "b5Title": "Career Growth",
+      "b5Desc": "Clear path from guard to supervisor and senior roles",
+      "b6Title": "Flexible Posting",
+      "b6Desc": "Assignments across Metro Manila in diverse industries"
+    },
+    "join": {
+      "title": "Join the LISAI Family",
+      "highlight": "Today",
+      "subtitle": "Be part of a team that has protected lives and assets across Metro Manila for over four decades.",
+      "facebook": "Learn More on Facebook",
+      "apply": "Apply for a Position"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Contact Us",
+      "title": "We're Here to Help",
+      "subtitle": "Reach out to our team and we'll get back to you within one business day."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Office Hours",
+      "hoursVal": "Mon–Sat: 8:00 AM – 5:00 PM",
+      "formTitle": "Send Us a Message",
+      "name": "Full Name",
+      "phonePlaceholder": "09XX XXX XXXX",
+      "emailPlaceholder": "juan@email.com",
+      "messagePlaceholder": "Tell us about your security needs...",
+      "send": "Send Message"
+    },
+    "social": {
+      "label": "Follow Us",
+      "title": "Stay Connected with LISAI",
+      "subtitle": "Follow us on social media for updates, job postings, and security tips."
+    }
+  },
+  "apply": {
+    "intro": {
+      "label": "Application Process",
+      "applying": "Applying for",
+      "expectLabel": "What to Expect",
+      "e1": "Fill out a short application form — takes about 3 minutes.",
+      "e2": "Attach your resume or any relevant documents.",
+      "e3": "Our HR team will review and reach out within 3–5 business days.",
+      "e4": "Selected applicants will be invited for an interview.",
+      "proceed": "Proceed to Application →",
+      "exit": "Exit"
+    },
+    "form": {
+      "label": "Job Application",
+      "subtitle": "Fill out all fields below. Our HR team will be in touch within 3–5 business days.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "position": "Position Applying For",
+      "experience": "Years of Experience",
+      "expNone": "No experience — willing to train",
+      "expLess1": "Less than 1 year",
+      "exp1to3": "1 – 3 years",
+      "exp3to5": "3 – 5 years",
+      "exp5plus": "5+ years",
+      "employer": "Previous Employer",
+      "intro": "Brief Introduction",
+      "resume": "Resume / CV",
+      "uploadLabel": "Click to upload",
+      "uploadHint": "PDF, DOC, DOCX (max 5MB)",
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "consent": "By submitting, you agree to have your information reviewed by the LISAI HR team.",
+      "exit": "Exit",
+      "optional": "(optional)",
+      "required": "*",
+      "successTitle": "Application Submitted",
+      "successBody": "Thanks, {{name}}. We've received your application for {{position}}. Our HR team will be in touch within 3–5 business days.",
+      "backJobs": "← Back to Jobs",
+      "errFirstName": "First name is required.",
+      "errLastName": "Last name is required.",
+      "errPhone": "Phone number is required.",
+      "errPhoneInvalid": "Enter a valid PH number (e.g. 09XX XXX XXXX or +639XX XXX XXXX).",
+      "errEmail": "Enter a valid email address.",
+      "errResume": "Please upload your resume or CV.",
+      "errGeneric": "Something went wrong. Please try again or email us directly.",
+      "errNetwork": "Network error. Please check your connection and try again.",
+      "fileSizeErr": "File exceeds 5MB limit. Please upload a smaller file."
+    }
+  }
+}

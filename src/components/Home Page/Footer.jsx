@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useLang } from '../../i18n/useLang'
 
 export default function Footer() {
+  const { t } = useLang()
+
+  const companyLinks = [
+    { labelKey: 'nav.about', path: '/about' },
+    { labelKey: 'nav.services', path: '/services' },
+    { labelKey: 'nav.jobs', path: '/jobs' },
+    { labelKey: 'nav.contact', path: '/contact' },
+  ]
+
   return (
     <footer
       style={{
@@ -44,35 +54,43 @@ export default function Footer() {
         {/* Left */}
         <div className="footer-left">
           <h3 style={{ color: 'white', fontSize: 'clamp(20px, 2.8vw, 36px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '24px' }}>
-            Let's safeguard your<br />assets, together.
+            {t('footer.tagline')}
           </h3>
           <Link to="/contact" style={{ display: 'inline-block', backgroundColor: '#2a7a9b', color: 'white', fontSize: '13px', fontWeight: 300, padding: '10px 22px', textDecoration: 'none' }}>
-            Contact us
+            {t('nav.contact')}
           </Link>
         </div>
 
         {/* Right columns */}
         <div className="footer-columns">
           <div>
-            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>Office Hours</p>
+            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+              {t('services.talk.hours')}
+            </p>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px', lineHeight: 1.8, fontWeight: 300 }}>
               Monday to Friday<br />8:00 AM - 5:00PM<br /><br />
               Saturday<br />9:00 AM - 5:00PM<br /><br />
-              Sunday & Holidays<br />Closed
+              Sunday &amp; Holidays<br />Closed
             </p>
           </div>
 
           <div>
-            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>Company</p>
+            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+              {t('footer.company')}
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '9px' }}>
-              {[{ label: 'About Us', path: '/about' }, { label: 'Services', path: '/services' }, { label: 'Jobs', path: '/jobs' }, { label: 'Contact Us', path: '/contact' }].map((link) => (
-                <Link key={link.label} to={link.path} style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px', fontWeight: 300, textDecoration: 'none' }}>{link.label}</Link>
+              {companyLinks.map((link) => (
+                <Link key={link.path} to={link.path} style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px', fontWeight: 300, textDecoration: 'none' }}>
+                  {t(link.labelKey)}
+                </Link>
               ))}
             </div>
           </div>
 
           <div>
-            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>Contact</p>
+            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+              {t('contact.hero.label')}
+            </p>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px', lineHeight: 1.8, fontWeight: 300 }}>
               Suite 302 Eleongsing Bldg<br />440 Rizal Ave Ext,<br />Caloocan City<br /><br />
               Mobile: 0917 638 1250<br />Land: (+632) 8364 0165<br /><br />
@@ -83,7 +101,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>Follow Us</p>
+            <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+              {t('contact.social.label')}
+            </p>
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
               {[
                 { id: 'fb', url: 'https://www.facebook.com/lisai86', icon: <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg> },
