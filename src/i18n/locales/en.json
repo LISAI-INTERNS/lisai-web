@@ -69,51 +69,50 @@
   },
   "about": {
     "hero": {
-      "label": "About Us",
-      "title": "Decades of Dedicated Protection",
-      "subtitle": "Since 1983, LISAI has stood as one of Metro Manila's most trusted security agencies."
+      "label": "Our Story",
+      "title": "Built on Integrity,",
+      "highlight": "Bound by Trust.",
+      "subtitle": "Over 40 years of protecting lives and assets across Metro Manila. Highly trained professionals delivering world-class security services."
     },
     "story": {
-      "label": "Our Story",
-      "title": "Built on Trust, Driven by Service",
-      "body": "Liberty Investigation & Security Agency Inc. was founded with a simple belief — that every person and business deserves to feel safe. Over four decades, we've grown from a small team to over 5,000 deployed guards across the region."
+      "label": "The Story",
+      "title": "From Humble Beginnings to Industry Leadership",
+      "p1": "In 1982, our founder, Francisco C. Palacio, and his wife, Dr. Celesdenia Palacio, MD, embarked on a journey in the security industry by establishing the Magilas Security Agency.",
+      "p2": "\"From Magilas to Liberty – a transformation that marked our commitment to excellence and innovation in security services.\" Four years later, in 1986, the company underwent a strategic transformation and became Liberty Investigation & Security Agency Inc.",
+      "p3": "Throughout the years, Liberty has experienced remarkable growth, establishing itself as a respected and trusted security firm in the region. This success is a testament to the unwavering dedication of our highly skilled team.",
+      "stat1": "Active Clients",
+      "stat2": "Former Clients",
+      "stat3": "Security Officers"
     },
     "journey": {
       "label": "Our Journey",
-      "title": "Milestones That Define Us",
-      "1983": "Founded in Caloocan City",
-      "1990": "Expanded to 500+ guards",
-      "2000": "SOSIA accreditation achieved",
-      "2010": "Launched Palacio Training Academy",
-      "2023": "5,000+ active guards deployed"
-    },
-    "industries": {
-      "label": "Who We Serve",
-      "title": "Industries We've Protected",
-      "logistics": "Logistics & Transportation",
-      "warehouses": "Warehouses & Stockrooms",
-      "residential": "Residential Subdivisions",
-      "offices": "Offices & Corporate Buildings",
-      "shopping": "Shopping Malls & Retail",
-      "highProfile": "High-Profile Individuals"
+      "title": "Four Decades of Excellence",
+      "subtitle": "Key milestones that shaped Liberty into the industry leader it is today",
+      "y1982title": "The Beginning",
+      "y1982desc": "Francisco C. Palacio and Dr. Celesdenia Palacio established Magilas Security Agency, marking the start of our legacy.",
+      "y1986title": "Transformation",
+      "y1986desc": "Rebranded to Liberty Investigation & Security Agency Inc., expanding our services and vision.",
+      "y2000title": "Expansion Era",
+      "y2000desc": "Major growth across Metro Manila, incorporating cutting-edge technology and advanced training programs.",
+      "y2025title": "Industry Leader",
+      "y2025desc": "Serving 5,000+ clients with a team of highly trained professionals across the Philippines."
     },
     "faq": {
-      "label": "FAQ",
-      "title": "Common Questions",
-      "q1": "Are your guards SOSIA accredited?",
-      "a1": "Yes. All our guards undergo SOSIA-accredited training through Palacio Security Training Academy Inc.",
-      "q2": "What areas do you cover?",
-      "a2": "We operate primarily across Metro Manila and nearby provinces.",
-      "q3": "How quickly can guards be deployed?",
-      "a3": "We can deploy within 24–72 hours depending on the scale of your requirement.",
-      "q4": "Do you offer female security guards?",
-      "a4": "Yes, we have trained female security officers available for appropriate assignments."
+      "label": "Frequently Asked Questions",
+      "subtitle": "Here are some of LISAI's frequently asked questions.",
+      "q1": "What is LISAI?",
+      "a1": "It stands for Liberty Investigation & Security Agency, Inc.",
+      "q2": "What services does LISAI offer?",
+      "a2": "LISAI offers manned guarding, investigation, security consultancy, and VIP protection services.",
+      "q3": "How long has LISAI been in operation?",
+      "a3": "LISAI has been in the security industry since 1982, with over four decades of experience.",
+      "q4": "Where is LISAI located?",
+      "a4": "We are located at Suite 302 Eleongsing Bldg., 440 Rizal Ave. Extension, Grace Park, Caloocan City."
     },
     "stats": {
-      "guards": "Active Guards",
-      "years": "Years of Experience",
-      "accredited": "SOSIA Accredited",
-      "industries": "Industries Served"
+      "s1": "Successful Projects",
+      "s2": "Guards on Duty",
+      "s3": "Happy Customers"
     }
   },
   "services": {

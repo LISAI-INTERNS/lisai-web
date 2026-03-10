@@ -1,55 +1,39 @@
-const milestones = [
-  {
-    year: '1982',
-    title: 'The Beginning',
-    description: 'Francisco C. Palacio and Dr. Celesdenia Palacio established Magilas Security Agency, marking the start of our legacy.',
-  },
-  {
-    year: '1986',
-    title: 'Transformation',
-    description: 'Rebranded to Liberty Investigation & Security Agency Inc., expanding our services and vision.',
-  },
-  {
-    year: '2000s',
-    title: 'Expansion Era',
-    description: 'Major growth across Metro Manila, incorporating cutting-edge technology and advanced training programs.',
-  },
-  {
-    year: '2025',
-    title: 'Industry Leader',
-    description: 'Serving 5,000+ clients with a team of highly trained professionals across the Philippines.',
-  },
-]
+import { useLang } from '../../i18n/useLang'
 
 export default function OurJourney() {
+  const { t } = useLang()
+
+  const milestones = [
+    { year: '1982', titleKey: 'about.journey.y1982title', descKey: 'about.journey.y1982desc' },
+    { year: '1986', titleKey: 'about.journey.y1986title', descKey: 'about.journey.y1986desc' },
+    { year: '2000s', titleKey: 'about.journey.y2000title', descKey: 'about.journey.y2000desc' },
+    { year: '2025', titleKey: 'about.journey.y2025title', descKey: 'about.journey.y2025desc' },
+  ]
+
   return (
     <section
       className="py-16 px-6"
-      style={{
-        background: 'linear-gradient(180deg, #ffffff 0%, #b2ede6 40%, #7dd8cf 70%, #b2ede6 100%)',
-      }}
+      style={{ background: 'linear-gradient(180deg, #ffffff 0%, #b2ede6 40%, #7dd8cf 70%, #b2ede6 100%)' }}
     >
       <div className="max-w-5xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-teal-600 text-2xl sm:text-3xl font-semibold mb-4">Our Journey</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-teal-900 mb-4">
-            Four Decades of Excellence
-          </h2>
-          <p className="text-gray-600 text-base">
-            Key milestones that shaped Liberty into the industry leader it is today
+          <p className="text-teal-600 text-2xl sm:text-3xl font-semibold mb-4">
+            {t('about.journey.label')}
           </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-teal-900 mb-4">
+            {t('about.journey.title')}
+          </h2>
+          <p className="text-gray-600 text-base">{t('about.journey.subtitle')}</p>
         </div>
 
-        {/* 1 col on mobile, 4 col on desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 relative z-10">
           {milestones.map((m) => (
             <div key={m.year} className="flex flex-col items-center">
               <div className="w-3 h-3 rounded-full bg-teal-500 border-2 border-white shadow mb-4" />
               <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-200 w-full">
                 <p className="text-teal-500 font-extrabold text-xl sm:text-2xl mb-1">{m.year}</p>
-                <p className="font-semibold text-gray-800 text-sm mb-2">{m.title}</p>
-                <p className="text-gray-500 text-xs leading-relaxed">{m.description}</p>
+                <p className="font-semibold text-gray-800 text-sm mb-2">{t(m.titleKey)}</p>
+                <p className="text-gray-500 text-xs leading-relaxed">{t(m.descKey)}</p>
               </div>
             </div>
           ))}
