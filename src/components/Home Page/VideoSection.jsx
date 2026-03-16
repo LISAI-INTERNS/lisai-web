@@ -1,8 +1,10 @@
 import { useLang } from '../../i18n/useLang'
-import video from '../../assets/Liberty-Security (1).mp4'
+import videoEn from '../../assets/Liberty-Security (1).mp4'
+import videoZh from '../../assets/video-mandarin-liberty.mp4'
 
 export default function VideoSection() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
+  const video = lang === 'zh' ? videoZh : videoEn
 
   return (
     <section style={{ backgroundColor: '#0a201d', padding: '80px 24px' }}>
@@ -21,7 +23,7 @@ export default function VideoSection() {
           border: '2px solid rgba(45, 212, 191, 0.3)',
           boxShadow: '0 0 60px rgba(45, 212, 191, 0.15)',
         }}>
-          <video controls style={{ width: '100%', display: 'block', maxHeight: '500px', objectFit: 'cover' }}>
+          <video key={lang} controls style={{ width: '100%', display: 'block', maxHeight: '500px', objectFit: 'cover' }}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
