@@ -97,21 +97,54 @@ export default function Footer() {
           </div>
 
           {/* Follow Us */}
-          <div>
+          <div style={{ minWidth: '170px' }}> {/* Prevents the column from shrinking too much */}
             <p style={{ color: 'white', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '16px' }}>Follow Us</p>
-            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'nowrap' }}> {/* Changed wrap to nowrap */}
               {[
-                <svg key="fb" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
-                <svg key="ig" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>,
-                <svg key="tt" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77.61 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-6.13 8.45 6.34 6.34 0 0011.44-3.77V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>,
-              ].map((icon, i) => (
-                <a key={i} href="#" style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.75)', flexShrink: 0 }}>
-                  {icon}
+                {
+                  key: "fb",
+                  url: "https://www.facebook.com/lisai86",
+                  svg: <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                },
+                {
+                  key: "ig",
+                  url: "https://www.instagram.com/lisai.official?igsh=bXM2czZvcG5xdzl4",
+                  svg: <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                },
+                {
+                  key: "tt",
+                  url: "https://www.tiktok.com/@libertysecurityph",
+                  svg: <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77.61 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-6.13 8.45 6.34 6.34 0 0011.44-3.77V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+                },
+                {
+                  key: "li",
+                  url: "https://www.linkedin.com/in/lisai-ph/?originalSubdomain=ph",
+                  svg: <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                }
+              ].map((item) => (
+                <a 
+                  key={item.key} 
+                  href={item.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ 
+                    width: '34px', 
+                    height: '34px', 
+                    borderRadius: '50%', 
+                    border: '1px solid rgba(255,255,255,0.35)', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    color: 'rgba(255,255,255,0.75)', 
+                    flexShrink: 0,
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  {item.svg}
                 </a>
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </footer>
