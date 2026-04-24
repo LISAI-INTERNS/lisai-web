@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useLang } from '../../i18n/useLang'
 import guardPhoto from '../../assets/Guard-Element-Home.png'
 
@@ -9,6 +10,7 @@ const statKeys = [
 
 export default function AboutUs() {
   const { t } = useLang()
+   const navigate = useNavigate()
 
   return (
     <section className="bg-white py-16 sm:py-20 px-6 overflow-hidden">
@@ -42,12 +44,12 @@ export default function AboutUs() {
             ))}
           </div>
 
-          <a
-            href="/about"
+<button
+            onClick={() => navigate('/about')}
             className="inline-block bg-[#223a3d] hover:bg-[#1a202c] text-white text-[11px] font-black uppercase tracking-[0.2em] px-10 py-4 transition-all duration-300 shadow-md"
           >
             {t('home.aboutSection.learnMore')}
-          </a>
+          </button>
         </div>
 
         {/* Right */}

@@ -28,6 +28,7 @@ export default function ApplyForm() {
         { value: 'Operations',      label: f('posBO_Ops') },
         { value: 'Marketing',       label: f('posBO_Mktg') },
         { value: 'Accounting',      label: f('posBO_Acct') },
+        { value: 'Administrative',  label: f('posBO_Admin') },
       ]
     : [
         { value: 'General Application', label: f('posGeneral') },
