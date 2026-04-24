@@ -90,8 +90,8 @@ export default function Footer() {
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '13px', lineHeight: 2, fontWeight: 300 }}>
               Suite 302 Eleongsing Bldg<br />440 Rizal Ave Ext,<br />Caloocan City<br /><br />
               Mobile: 0917-6381250<br />Land: (+632) 83640165<br /><br />
-              <a href="mailto:admin@libertysecurityph.com" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'underline', fontWeight: 300, wordBreak: 'break-all' }}>
-                admin@libertysecurityph.com
+              <a href="mailto:libertyinvestigation_inc@yahoo.com" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'underline', fontWeight: 300, wordBreak: 'break-all' }}>
+                libertyinvestigation_inc@yahoo.com
               </a>
             </p>
           </div>

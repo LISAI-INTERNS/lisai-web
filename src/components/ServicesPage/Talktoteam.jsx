@@ -30,7 +30,7 @@ export default function TalkToTeam() {
           <div className="border border-gray-300 rounded-lg p-6 sm:p-8 flex flex-col items-center justify-center">
             <p className="text-[13px] text-[#009688] font-bold uppercase tracking-widest mb-3">{t('services.talk.email')}</p>
             <p className="text-gray-800 text-sm font-semibold text-center">
-              admin@libertysecurityph.com<br />libertyinvestigation_inc@yahoo.com
+              libertyinvestigation_inc@yahoo.com
             </p>
           </div>
           <div className="border border-gray-300 rounded-lg p-6 sm:p-8 flex flex-col items-center justify-center">
